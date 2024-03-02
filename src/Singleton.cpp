@@ -1,20 +1,22 @@
 #include <iostream>
 #include <mutex>
 
-// Lazy Initialization
+// 饿汉式
 class Singleton{
     
 public:
-    // 
+    // 提供全局访问接口
     static Singleton& getInstance(){
+        // 由于静态局部变量只在第一次调用时初始化
+        // 因此可以保证线程安全性和单例性
         static Singleton instance;
         return instance;
     }
 
 private:
-
+    // 构造函数私有化
     Singleton(){};
-
+    // 禁止拷贝构造和赋值操作
     Singleton(const Singleton&) = delete;
     Singleton& operator=(const Singleton&) = delete;
 
