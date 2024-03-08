@@ -27,7 +27,7 @@ void useResource(){
 
 int main(){
     std::thread t1(useResource);
-    std::thread t1(useResource);
+    std::thread t2(useResource);
     t1.join();
     t2.join();
 

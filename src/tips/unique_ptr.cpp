@@ -30,6 +30,6 @@ int main(){
     //
     ptr_target = std::make_unique<int>(50);
 
-    
+     
     return 0;
 }
