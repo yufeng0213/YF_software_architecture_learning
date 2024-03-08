@@ -34,6 +34,20 @@ int main(){
     // 移动赋值，旧资源被释放
     ptr_target = std::make_unique<int>(50);
 
-     
+    //
+    std::unique_ptr<char[]> ptr4 = std::make_unique<char[]>(50);
+
+    //
+    std::cout<<*ptr2<<std::endl;
+
+    //
+    *ptr2 = 25;
+
+    //
+    ptr1.reset();
+
+    //
+    int* raw_ptr = ptr1.get();
+         
     return 0;
 }
