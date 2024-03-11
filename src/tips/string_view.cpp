@@ -14,5 +14,13 @@ int main(){
     char cstr[] = "C-style string";
     std::string_view sv4(cstr);
 
+    // 从字符数组和长度创建
+    char array[] = {'H', 'e', 'l', 'l', 'o'};
+    // 减去1，因为末尾有'\0'
+    std::string_view sv5(array, sizeof(array) - 1);
+
+    // 空string_view
+    std::string_view empty_sv;
+
     return 0;
 }
