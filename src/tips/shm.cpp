@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 #include <thread>
-
+//
 void readFile() {
     HANDLE hMapFile = CreateFileMapping(INVALID_HANDLE_VALUE, // 使用分页文件
                                         NULL,					// 默认安全属性
