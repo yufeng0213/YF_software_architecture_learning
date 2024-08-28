@@ -1,2 +1,6 @@
 cmake*/
 *.exe
+
+*.out
+*.vs
+*.idea
