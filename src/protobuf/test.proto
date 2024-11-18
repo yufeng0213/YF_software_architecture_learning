@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package TEST;
+
+message Quaternion{
+    double q0 = 1;
+    double qx = 2;
+    double qy = 3;
+    double qz = 4;
+}
